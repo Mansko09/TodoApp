@@ -1,7 +1,17 @@
 # TodoApp
 A Simple and Intuitive Task Manager
 
-This is a web-based Todo application built to help users organize their tasks efficiently. Part of CS50 introduction to mobile developpement 
+Welcome to your web-based Todo application — a clean, responsive, and user-friendly way to stay organized and manage your tasks with ease.
+
+Built as part of the CS50 Introduction to Mobile App Development, this project reflects my ongoing journey in web development.
+
+🚀 Features :
+📝 Create new tasks
+
+✏️ Edit existing tasks
+
+✅ Mark tasks as complete
+
+❌ Delete tasks
 
 
-Designed with a focus on simplicity and usability, this project is part of my journey in learning and improving my web development skills. It includes features like task creation, editing, deletion, and marking tasks as complete — all within a responsive and user-friendly interface.

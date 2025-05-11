@@ -9,11 +9,20 @@ const classNames = {
   const itemCountSpan = document.getElementById('item-count')
   const uncheckedCountSpan = document.getElementById('unchecked-count')
   
+  const taskInput = document.getElementById("taskName");
+  taskInput.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      newTodo();
+    }
+  });
   function newTodo() {
-    let taskName = prompt("Quel est le nom de la tâche ?");
+    const taskInput = document.getElementById("taskName");
+    let taskName = taskInput.value.trim(); 
+  
     if (!taskName) {
       taskName = "New Task";
     }
+    taskInput.value = "";
     const newTask = document.createElement("li");
     newTask.classList.add(classNames.TODO_ITEM);
     newTask.textContent = taskName;
@@ -32,6 +41,8 @@ const classNames = {
             uncheckedCountSpan.textContent++;
         }
     })
+
+    
     const del= document.createElement("button");
     del.textContent="X";
     del.classList.add(classNames.TODO_DELETE);
@@ -44,7 +55,7 @@ const classNames = {
         itemCountSpan.textContent--;
     })
 
+    saveTasks();
 
     // alert('New TODO button clicked!')
   }
-  

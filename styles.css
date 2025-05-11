@@ -39,10 +39,10 @@
     flex: none;
   }
   
-  .button {
+  /* .button {
     padding: 10px 20px;
-    border : 10px solid #6e434c;
-    border-radius : 10px;
+    border : 10px solid #070707;
+    border-radius : 20px;
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-weight: bold;
     cursor: pointer;
@@ -50,6 +50,20 @@
   }
   .button:hover {
     color: rgb(248, 236, 246);
+  } */
+
+  button {
+    padding: 10px 16px;
+    background-color: #9dc6f3;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #2d89eb;
   }
   
   .todo-list {
@@ -83,4 +97,27 @@
   
   .todo-container:first-of-type {
     border-top: 1px solid #333;
+  }
+
+  .input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* espace entre input et bouton */
+    margin-top: 20px;
+  }
+
+  #taskName {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-family:  "Comic Sans MS", cursive, sans-serif;
+    transition: border-color 0.3s;
+  }
+  
+  #taskName:focus {
+    border-color: #007bff; /* bleu clair */
+    background-color: #f9f9f9;
   }

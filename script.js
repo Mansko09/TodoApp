@@ -10,7 +10,10 @@ const classNames = {
   const uncheckedCountSpan = document.getElementById('unchecked-count')
   
   function newTodo() {
-    const taskName = prompt("Quel est le nom de la tâche ?");
+    let taskName = prompt("Quel est le nom de la tâche ?");
+    if (!taskName) {
+      taskName = "New Task";
+    }
     const newTask = document.createElement("li");
     newTask.classList.add(classNames.TODO_ITEM);
     newTask.textContent = taskName;

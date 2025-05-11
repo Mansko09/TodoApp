@@ -3,9 +3,11 @@
   }
   
   html, body {
-    background-color: #eee;
+    background-color: #dd7c6f;
     margin: 0;
     padding: 0;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
   }
   
   ul {
@@ -29,7 +31,7 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #d1b8b1;
     height: 100vh;
   }
   
@@ -39,6 +41,15 @@
   
   .button {
     padding: 10px 20px;
+    border : 10px solid #6e434c;
+    border-radius : 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #dfa1c7
+  }
+  .button:hover {
+    color: rgb(248, 236, 246);
   }
   
   .todo-list {
@@ -49,11 +60,20 @@
   }
   
   .todo-delete {
-    margin: 10px;
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .todo-delete:hover {
+    color: rgb(252, 248, 248);
   }
   
   .todo-checkbox {
-    margin: 10px;
+    width: 20px;
+    height: 20px;
+    accent-color: #40f36d;
   }
   
   .todo-container {
@@ -64,4 +84,3 @@
   .todo-container:first-of-type {
     border-top: 1px solid #333;
   }
-  

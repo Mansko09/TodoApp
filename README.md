@@ -15,4 +15,4 @@ Built as part of the CS50 Introduction to Mobile App Development, this project r
 ❌ Delete tasks
 
 
-![Preview of the TODO app](screenshot.png)
+![Preview of the TODO app](Screenshot.png)
